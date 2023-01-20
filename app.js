@@ -6,12 +6,11 @@ function changeCounter() {
   document.getElementById("counter").textContent = inputCounter;
 
   if (inputCounter >= 50) {
-    inputBox.className = "warning"
-    document.getElementById("counter").className = "warning"
-  }
-  else {
-    inputBox.className = ""
-    document.getElementById("counter").className = ""
+    inputBox.classList.add("warning");
+    document.getElementById("counter").classList.add("warning");
+  } else {
+    inputBox.classList.remove("warning");
+    document.getElementById("counter").classList.remove("warning");
   }
 }
 
